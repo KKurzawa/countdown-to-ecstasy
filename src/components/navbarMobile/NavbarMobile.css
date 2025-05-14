@@ -1,0 +1,11 @@
+.nav-mobile-dropdown{
+    background-color: var(--color-one);
+    color:var(--color-two);
+    border-bottom: double 3px var(--color-two);
+}
+
+.mobile-nav-link{
+    border: solid 1px var(--color-five);
+    border-radius: 10px;
+    background: linear-gradient(to right, var(--color-three), var(--color-five));
+}

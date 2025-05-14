@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* variables */
+
+  /* fonts */
+
+  --font-one: "Monoton", sans-serif;
+  --font-two: "Orbitron", sans-serif;
+
+  font-family: var(--font-two);
+
+  /* colors */
+  --color-one:#141A26;
+  --color-two:rgb(181, 186, 200);
+  --color-three:#222c41e6;
+  --color-four:#141a26ab;
+  --color-five:rgba(181, 186, 200, 0.659);
+}
+
+body{
+  background-color: var(--color-three);
+}
+
+.main{
+  position: relative;
+  width: 100%;
+}
+
+.main-content::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: repeat-y;
+  background-image: url('../src/assets/RoyalScam2.jpg');
+  opacity: .2;
+  z-index: 0;
+}
+
+.section-title{
+    position: relative;
+    /* z-index: 40; */
+    background-color: var(--color-four);
+    border-top: 3px double var(--color-two);
+    border-bottom: 3px double var(--color-two);
+    color: var(--color-two);
+    text-shadow: 2px 2px 5px var(--color-one);
+}
+
+.input{
+    outline: none;
+    border:double 3px var(--color-two);
+    background-color: var(--color-one);
+    position: relative;
+    color:var(--color-two);
+    border-radius: 10px;
+}
+
+.btn{
+  border: double 3px var(--color-two);
+  background-color: var(--color-one);
+  color:var(--color-two);
+  position: relative;
+  border-radius: 5px;
+}
+
+/* zindex */
+.member-modal,
+.modal-info-container,
+.testimonial-error-modal,
+.test-modal,
+.member-modal-message,
+.error-modal{
+  z-index: 10;
+}
+
+.header,
+.hamburger,
+.nav-mobile-dropdown,
+.footer{
+  z-index: 9;
+}
+
+.section-title{
+  z-index: 8;
+}
+
+.modal-x{
+  color: var(--color-two);
+}
+
+.form-modal-message{
+  color: var(--color-two);
+  border-radius: 5px;
+  border: double 3px var(--color-two);
+  background-color: var(--color-one);
+}

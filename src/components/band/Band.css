@@ -1,0 +1,4 @@
+.band{
+    color: var(--color-two);
+    text-shadow: 2px 2px 5px var(--color-one);
+}

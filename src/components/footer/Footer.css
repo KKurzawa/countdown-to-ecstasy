@@ -1,0 +1,5 @@
+.footer{
+    background-color: var(--color-one);
+    color: var(--color-two);
+    border-top: 3px double var(--color-two);
+}

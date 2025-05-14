@@ -1,0 +1,51 @@
+.modal-info-container{
+    position: relative;
+}
+
+.member-modal-message{
+    border-radius: 5px;
+    border: double 3px var(--color-two);
+    background-color: var(--color-one);
+}
+
+#michael::before,
+#kris::before,
+#laura::before,
+#dale::before,
+#dave::before,
+#adam::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;   
+    background-size: cover;
+    z-index:70;
+}
+
+#michael::before{
+    background-image: url('../../assets/MichaelOne.jpg');
+}
+
+#kris::before{
+    background-image: url('../../assets/KrisOne.png');
+}
+
+#laura::before{
+    background-image: url('../../assets/LauraOne.jpg');
+}
+
+#dale::before{
+    background-image: url('../../assets/DaleOne.jpg');
+}
+
+#dave::before{
+    background-image: url('../../assets/DaveOne.jpg');
+}
+
+#adam::before{
+    background-image: url('../../assets/AdamOne.png');
+}
