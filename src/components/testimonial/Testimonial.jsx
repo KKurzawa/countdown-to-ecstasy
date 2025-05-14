@@ -1,7 +1,6 @@
 import './Testimonial.css'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
-import TestimonialErrorModal from '../testimonialErrorModal/TestimonialErrorModal'
 import TestimonialModal from '../testimonialModal/TestimonialModal'
 
 // const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
@@ -20,14 +19,8 @@ const Testimonial = () => {
         experience: ''
     }])
 
-    const [openTestErrModal, setTestErrOpenModal] = useState(false)
     const [openTestModal, setOpenTestModal] = useState(false)
-
-    function validateComment() {
-        if (!input.firstName || !input.lastName || !input.experience) {
-            setTestErrOpenModal(true)
-        }
-    }
+    const [modalMessage, setModalMessage] = useState('')
 
     useEffect(() => {
         fetch(`${apiBaseUrl}/comments`).then(res => {
@@ -51,25 +44,31 @@ const Testimonial = () => {
 
     function handleSubmit(e) {
         e.preventDefault()
-        validateComment()
         const newComment = {
             firstName: input.firstName,
             lastName: input.lastName,
             experience: input.experience
         }
         if (input.firstName && input.lastName && input.experience) {
+            setModalMessage('Thank you for sharing your experience!')
             setOpenTestModal(true)
             axios.post(`${apiBaseUrl}/create`, newComment).then(result => {
                 console.log(result)
             }).catch(error => {
                 console.error(error)
             })
+        } else {
+            setModalMessage('You must enter your first name, your last name, and your experience to submit.')
+            setOpenTestModal(true)
         }
     }
 
-    function closeModal() {
-        setOpenTestModal(false)
-        location.reload()
+    const closeModal = () => {
+        if (modalMessage === 'Thank you for sharing your experience!') {
+            location.reload()
+        } else {
+            setOpenTestModal(false)
+        }
     }
 
     return (
@@ -86,8 +85,7 @@ const Testimonial = () => {
                     </article>
                 ))}
             </section>
-            {openTestErrModal && <TestimonialErrorModal closeTestErrModal={() => setTestErrOpenModal(false)} />}
-            {openTestModal && <TestimonialModal closeTestModal={() => closeModal()} />}
+            {openTestModal && <TestimonialModal props={{ closeModal, modalMessage }} />}
             <h2 className='section-title w-full py-5 text-center text-3xl md:text-4xl lg:text-5xl'>Tell Us About Your Experience</h2>
             <form onSubmit={handleSubmit} className='flex flex-col items-start pt-10 w-[80%] md:w-[60%] lg:w-[40%] mb-10 text-base md:text-xl'>
                 <article className='flex flex-col gap-2 w-full'>
