@@ -60,7 +60,7 @@ const NavbarMobile = () => {
                         animate={{ top: '4.35rem', opacity: 1 }}
                         exit={{ top: '-15rem', left: 0, opacity: 0 }}
                         className="nav-mobile-dropdown absolute w-full">
-                        <ul className="mobile-nav-links flex-col gap-3 w-full p-5 text-lg">
+                        <ul className="mobile-nav-links flex flex-col gap-2 w-full p-5 text-2xl">
                             <motion.li
                                 initial={{ left: '200%', opacity: 0 }}
                                 animate={{ left: '0%', opacity: 1 }}

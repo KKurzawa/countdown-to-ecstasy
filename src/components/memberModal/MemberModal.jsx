@@ -32,7 +32,7 @@ const MemberModal = ({ props: { memberId, setOpenMemberModal } }) => {
                 <article className='relative w-full z-50 h-full'>
                     <section id={id} className='member-modal-message flex flex-col gap-2 relative p-10 w-full h-full'>
                         <h2 className='text-3xl font-bold md:text-5xl'>{memberInfo[memberId].name}</h2>
-                        <h2 className='text-xl md:text-4xl'>{memberInfo[memberId].bio}</h2>
+                        <h2 className='text-lg md:text-4xl'>{memberInfo[memberId].bio}</h2>
                         <section className='flex relative gap-3 text-2xl'>
                             <i className={memberInfo[memberId].websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(memberInfo[memberId].websiteLink, '_blank')
