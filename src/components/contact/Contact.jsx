@@ -2,7 +2,6 @@ import './Contact.css'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { validateEmail } from '../../Utils/EmailValidator'
-import ContactErrorModal from '../contactErrorModal/ContactErrorModal'
 import ContactModal from '../contactModal/ContactModal'
 
 const Contact = () => {
@@ -11,14 +10,16 @@ const Contact = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
 
-    const [openContactErrModal, setContactErrOpenModal] = useState(false)
     const [openContactModal, setOpenContactModal] = useState(false)
+    const [modalMessage, setModalMessage] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if (!validateEmail(email)) {
-            setContactErrOpenModal(true)
+            setModalMessage("You must enter your name, a valid email, a subject, and a message.")
+            setOpenContactModal(true)
+            console.log(openContactModal)
             return
         }
 
@@ -35,6 +36,7 @@ const Contact = () => {
 
         emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((response) => {
+                setModalMessage("Thank you for email!  We'll get back soon!")
                 console.log('Email sent successfully!', response);
                 setOpenContactModal(true)
                 setName('');
@@ -48,8 +50,7 @@ const Contact = () => {
 
     }
 
-    function closeModal() {
-        setContactErrOpenModal(false)
+    const closeContactModal = () => {
         setOpenContactModal(false)
     }
 
@@ -87,8 +88,7 @@ const Contact = () => {
                 </article>
                 <button type='submit' className='btn my-3 px-3'>Submit</button>
             </form>
-            {openContactErrModal && <ContactErrorModal closeContactModal={() => closeModal()} />}
-            {openContactModal && <ContactModal closeContactModal={() => closeModal()} />}
+            {openContactModal && <ContactModal props={{ closeContactModal, modalMessage }} />}
         </article>
     )
 }

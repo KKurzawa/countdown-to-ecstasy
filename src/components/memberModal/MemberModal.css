@@ -23,7 +23,7 @@
     height: 100%;
     opacity: .2;   
     background-size: cover;
-    z-index:70;
+    z-index:10;
 }
 
 #michael::before{

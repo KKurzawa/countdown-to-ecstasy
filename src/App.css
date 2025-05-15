@@ -18,6 +18,7 @@
   --color-three:#222c41e6;
   --color-four:#141a26ab;
   --color-five:rgba(181, 186, 200, 0.659);
+  --color-six:#6f8bc5;
 }
 
 body{
@@ -46,7 +47,6 @@ body{
 
 .section-title{
     position: relative;
-    /* z-index: 40; */
     background-color: var(--color-four);
     border-top: 3px double var(--color-two);
     border-bottom: 3px double var(--color-two);
@@ -78,7 +78,8 @@ body{
 .test-modal,
 .member-modal-message,
 .error-modal,
-.shows-modal{
+.shows-modal,
+.media-icon{
   z-index: 10;
 }
 
@@ -93,6 +94,8 @@ body{
   z-index: 8;
 }
 
+/* modals */
+
 .modal-x{
   color: var(--color-two);
 }
@@ -103,4 +106,85 @@ body{
   border-radius: 5px;
   border: double 3px var(--color-two);
   background-color: var(--color-one);
+}
+
+/* hover effects  */
+
+.media-icon{
+  position: relative;
+  color: var(--color-two);
+  transition:all .25s linear;
+}
+
+.media-icon:hover{
+  color: var(--color-six)
+}
+
+.nav-btn,
+.venue,
+.city,
+.ticket-link,
+.top-btn,
+.email,
+.phone,
+.dev-link{
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-btn::before,
+.venue::before,
+.city::before,
+.ticket-link::before,
+.top-btn::before,
+.email::before,
+.phone::before,
+.dev-link::before{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: double 3px var(--color-two);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.nav-btn::after,
+.venue::after,
+.city::after,
+.ticket-link::after,
+.top-btn::after,
+.email::after,
+.phone::after,
+.dev-link::after{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: double 3px var(--color-two);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.nav-btn:hover::before,
+.nav-btn:hover::after,
+.venue:hover::before,
+.venue:hover::after,
+.city:hover::before,
+.city:hover::after,
+.ticket-link:hover::before,
+.ticket-link:hover::after,
+.top-btn:hover::before,
+.top-btn:hover::after,
+.top-btn:target::before,
+.top-btn:target:after,
+.email:hover::before,
+.email:hover::after,
+.phone:hover::before,
+.phone:hover::after,
+.dev-link:hover::before,
+.dev-link:hover::after{
+  width:50%
 }

@@ -4,7 +4,6 @@ import ShowsModal from '../showsModal/ShowsModal'
 import { useState } from 'react'
 
 const Show = () => {
-    const [memberId, setMemberId] = useState('')
     const [openShowsModal, setOpenShowsModal] = useState(false)
     const [content, setContent] = useState('')
 

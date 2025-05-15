@@ -1,5 +1,5 @@
 .member-name,
-.artisits{
+.artists{
     color: var(--color-two);
     text-shadow: 2px 2px 5px var(--color-one);
 }
@@ -15,5 +15,12 @@
 .member-pic{
     border-radius: 5px;
     border: double 3px var(--color-two);
-    filter: grayscale(.25);
+    filter: grayscale(.35);
+    transition: all .5s linear;
 }
+
+.member-pic:hover{
+    filter: grayscale(0) brightness(1.25);
+}
+
+
