@@ -4,7 +4,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="footer relative flex flex-col items-center gap-2 py-2 md:py-5">
+        <footer className="footer relative flex flex-col items-center md:gap-2 py-2 md:py-5">
             <button className='top-btn text-base md:text-2xl' onClick={() => setTimeout(() => {
                 const element = document.querySelector('#top');
                 element?.scrollIntoView({ behavior: 'smooth' })

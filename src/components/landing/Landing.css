@@ -1,0 +1,144 @@
+.landing{
+    background-color: var(--color-one);
+    color:var(--color-two)
+}
+
+.circle{
+  box-shadow:
+  0 0 0 2px rgb(181, 186, 200),
+  0 0 0 4px #141A26,
+  0 0 0 6px rgb(181, 186, 200),
+  0 0 0 8px #141A26;
+  position: relative;
+  background-color: var(--color-three);
+  animation: logo-fade-in 2s linear 0s 1;
+}
+
+.circle::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/RoyalScam2.jpg');
+    background-position: bottom left;
+    border-radius: 50%;
+    opacity: .1;
+}
+
+.countdown{
+    animation: countdown .5s linear 1s 1 both;
+}
+
+.to{
+    animation: countdown .5s linear 1.2s 1 both;
+}
+
+.ecstasy{
+    animation: countdown .5s linear 1.4s 1 both;
+}
+
+.an{
+    animation: countdown .5s linear 1.8s 1 both;
+}
+
+.exploration{
+    animation: countdown .5s linear 1.9s 1 both;
+}
+
+.into{
+    animation: countdown .5s linear 2s 1 both;
+}
+
+.steely{
+    animation: countdown .5s linear 2.1s 1 both;
+}
+
+.dan{
+    animation: countdown .5s linear 1.9s 1 both;
+}
+
+@keyframes logo-fade-in {
+    0% {
+        opacity: 0;
+        transform: rotateX(270deg);
+    }
+    75%{
+        transform: rotateX(360deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes countdown {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes to {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes ecstasy {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes an {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes exploration {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes into {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes steely {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes dan {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

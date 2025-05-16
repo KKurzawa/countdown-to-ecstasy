@@ -11,7 +11,7 @@ const NavbarMobile = () => {
             setOpen(false)
             const element = document.getElementById('shows')
             element?.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
+        }, 250)
     }
 
     function navigateToBand() {
@@ -19,7 +19,7 @@ const NavbarMobile = () => {
             setOpen(false)
             const element = document.getElementById('band')
             element?.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
+        }, 250)
     }
 
     function navigateToTestimonials() {
@@ -27,7 +27,7 @@ const NavbarMobile = () => {
             setOpen(false)
             const element = document.getElementById('testimonials')
             element?.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
+        }, 250)
     }
 
     function navigateToContact() {
@@ -35,7 +35,7 @@ const NavbarMobile = () => {
             setOpen(false)
             const element = document.getElementById('contact')
             element?.scrollIntoView({ behavior: 'smooth' })
-        }, 500)
+        }, 250)
     }
 
     return (
@@ -71,7 +71,7 @@ const NavbarMobile = () => {
                                     delay: .5
                                 }}
                                 className='mobile-nav-link relative pl-5 px-2'>
-                                <button className='flex w-full' onClick={navigateToBand}>Band</button>
+                                <button className='mobile-nav-btn flex w-full' onClick={navigateToBand}>Band</button>
                             </motion.li>
                             <motion.li
                                 initial={{ left: '200%', opacity: 0 }}

@@ -8,4 +8,5 @@
     border: solid 1px var(--color-five);
     border-radius: 10px;
     background: linear-gradient(to right, var(--color-three), var(--color-five));
+    position: relative;
 }
