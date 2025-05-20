@@ -17,7 +17,7 @@ const TestimonialModal = ({ props: { closeModal, modalMessage } }) => {
 
     return (
         <article ref={testModalRef} onClick={closeModalTwo} className="test-modal fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
-            <section className="modal-info-container flex flex-col items-end gap-5">
+            <section className="modal-info-container flex flex-col items-end flex-wrap gap-5">
                 <button><IoMdClose onClick={handleClick} className='modal-x mx-10 text-4xl' /></button>
                 <article className='form-modal-message text-center mx-10 p-5 md:p-10'>
                     <h2 className='text-3xl md:text-5xl pb-5'>{modalMessage}</h2>
