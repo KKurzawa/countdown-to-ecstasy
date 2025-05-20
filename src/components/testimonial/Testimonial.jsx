@@ -3,8 +3,8 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import TestimonialModal from '../testimonialModal/TestimonialModal'
 
-// const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
-const apiBaseUrl = "http://localhost:3001"
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
+// const apiBaseUrl = "http://localhost:3001"
 
 const Testimonial = () => {
     const [input, setInput] = useState({
