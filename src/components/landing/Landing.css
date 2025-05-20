@@ -1,5 +1,5 @@
 .landing{
-    background-color: var(--color-one);
+    /* background-color: var(--color-one); */
     color:var(--color-two)
 }
 
@@ -55,6 +55,10 @@
 
 .dan{
     animation: countdown .5s linear 1.9s 1 both;
+}
+
+.landing-content{
+    animation: fade-out 1.5s linear 4s 1 both;
 }
 
 @keyframes logo-fade-in {
@@ -140,5 +144,14 @@
     }
     100%{
         opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

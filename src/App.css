@@ -19,15 +19,17 @@
   --color-four:#141a26ab;
   --color-five:rgba(181, 186, 200, 0.659);
   --color-six:#6f8bc5;
+  --color-seven:#343f58;
 }
 
 body{
-background-color: var(--color-three);
+background-color: var(--color-one);
 }
 
 .main{
   position: relative;
   width: 100%;
+  background-color: var(--color-seven);
 }
 
 .main-content::before{
@@ -192,4 +194,17 @@ background-color: var(--color-three);
   border: double 3px var(--color-one);
   background-color: var(--color-six);
   color:var(--color-one)
+}
+
+.main{
+  animation: fade-in 1s linear 0s 1 both;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
