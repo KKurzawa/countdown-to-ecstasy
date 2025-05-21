@@ -23,4 +23,8 @@
     filter: grayscale(0) brightness(1.25);
 }
 
+.member-name{
+    font-weight: 500;
+}
+
 

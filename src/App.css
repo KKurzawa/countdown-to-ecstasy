@@ -54,6 +54,7 @@ background-color: var(--color-one);
     border-bottom: 3px double var(--color-two);
     color: var(--color-two);
     text-shadow: 2px 2px 5px var(--color-one);
+    font-weight: 600;
 }
 
 .input{

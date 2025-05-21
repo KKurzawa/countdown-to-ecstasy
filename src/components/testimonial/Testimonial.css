@@ -7,3 +7,7 @@
 .testimonial-container:not(:last-child) { 
     border-bottom: solid 1px var(--color-five);
 }
+
+.testimonial{
+    font-weight: 400;
+}
