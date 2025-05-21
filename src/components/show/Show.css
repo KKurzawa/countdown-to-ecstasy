@@ -9,3 +9,11 @@
 .show-container:not(:last-child) { 
     border-bottom: solid 1px var(--color-five);
 }
+
+.date,
+.time,
+.venue,
+.city,
+.ticket-link{
+    font-weight: 500;
+}
