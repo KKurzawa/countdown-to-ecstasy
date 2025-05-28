@@ -122,7 +122,7 @@ const memberInfo = [
     {
         id: 5,
         name: 'Adam James',
-        credits: 'DRB/Pete Fetters/Michael King',
+        credits: 'Karen Newman/Theo Gridiron/Stewart Franke',
         pic: Adam,
         websiteIcon: false,
         websiteLink: false,
@@ -138,7 +138,7 @@ const memberInfo = [
         soundCloudLink: false,
         youtubeIcon: false,
         youtubeLink: false,
-        bio: 'Consequat duis quis exercitation nulla id qui deserunt duis mollit voluptate incididunt commodo. Laborum eiusmod culpa nulla deserunt fugiat non irure. Sint in amet fugiat commodo est.'
+        bio: "Adam is a Detroit-area drummer/percussionist known for his versatility, performing every musical style from jazz and blues to rock and musical theater.  He has toured nationally, recorded for film and television and performed with such artists as Kim Wilson, Lazy Lester, The Tokens, Karen Newman, Stewart Franke and Theo Gridiron."
     }
 ]
 

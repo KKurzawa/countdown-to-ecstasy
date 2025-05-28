@@ -18,6 +18,7 @@ const BandMember = () => {
             {/* large */}
             <article className="band-member-border hidden lg:flex relative py-5">
                 {memberInfo.map((member) => member.id < 3 && (
+
                     <article key={member.id} className='flex flex-col items-center justify-center gap-1'>
                         <button onClick={() => handleMemberClick(member.id)} className='flex flex-col items-center gap-3'>
                             <h2 className="member-name md:text-3xl lg:text-4xl">{member.name}</h2>
@@ -25,7 +26,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists md:text-xs lg:text-sm">{member.credits}</p>
                         <section className='flex gap-3 text-3xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
@@ -59,7 +60,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists">{member.credits}</p>
                         <section className='flex gap-3 text-3xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
@@ -95,7 +96,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists text-xs">{member.credits}</p>
                         <section className='flex gap-3 text-2xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
@@ -129,7 +130,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists text-xs">{member.credits}</p>
                         <section className='flex gap-3 text-2xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
@@ -163,7 +164,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists text-xs">{member.credits}</p>
                         <section className='flex gap-3 text-2xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
@@ -199,7 +200,7 @@ const BandMember = () => {
                         </button>
                         <p className="artists relative text-xs">{member.credits}</p>
                         <section className='flex relative gap-3 text-2xl'>
-                            <i className={member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                            <i className={member.websiteIcon === false && member.appleMusicIcon === false && member.spotifyIcon === false && member.facebookIcon === false && member.instagramIcon === false && member.soundCloundIcon === false && member.youtubeIcon === false ? 'none' : member.websiteIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.websiteLink, '_blank')
                             }, 500)}>{member.websiteIcon}</button></i>
                             <i className={member.appleMusicIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
