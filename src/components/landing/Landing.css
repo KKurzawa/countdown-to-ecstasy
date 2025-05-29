@@ -11,7 +11,7 @@
   0 0 0 8px #141A26;
   position: relative;
   background-color: var(--color-three);
-  animation: logo-fade-in 2s linear 0s 1;
+  animation: logo-fade-in 2.5s linear 0s 1;
 }
 
 .circle::before{
@@ -26,39 +26,39 @@
 }
 
 .countdown{
-    animation: countdown .5s linear 1s 1 both;
+    animation: countdown .5s linear 1.5s 1 both;
 }
 
 .to{
-    animation: countdown .5s linear 1.2s 1 both;
+    animation: countdown .5s linear 1.7s 1 both;
 }
 
 .ecstasy{
-    animation: countdown .5s linear 1.4s 1 both;
+    animation: countdown .5s linear 1.9s 1 both;
 }
 
 .an{
-    animation: countdown .5s linear 1.8s 1 both;
+    animation: countdown .5s linear 2.8s 1 both;
 }
 
 .exploration{
-    animation: countdown .5s linear 1.9s 1 both;
+    animation: countdown .5s linear 3.1s 1 both;
 }
 
 .into{
-    animation: countdown .5s linear 2s 1 both;
+    animation: countdown .5s linear 3.3s 1 both;
 }
 
 .steely{
-    animation: countdown .5s linear 2.1s 1 both;
+    animation: countdown .5s linear 3.5s 1 both;
 }
 
 .dan{
-    animation: countdown .5s linear 1.9s 1 both;
+    animation: countdown .5s linear 3.7s 1 both;
 }
 
 .landing-content{
-    animation: fade-out 1.5s linear 4s 1 both;
+    animation: fade-out 1.5s linear 4.5s 1 both;
 }
 
 @keyframes logo-fade-in {
@@ -68,6 +68,7 @@
     }
     75%{
         transform: rotateX(360deg);
+        opacity: .5;
     }
     100% {
         opacity: 1;
