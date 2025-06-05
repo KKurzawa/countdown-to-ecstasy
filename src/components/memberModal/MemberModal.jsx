@@ -55,6 +55,9 @@ const MemberModal = ({ props: { memberId, setOpenMemberModal } }) => {
                             <i className={memberInfo[memberId].youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(memberInfo[memberId].youtubeLink, '_blank')
                             }, 500)}>{memberInfo[memberId].youtubeIcon}</button></i>
+                            <i className={memberInfo[memberId].linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(memberInfo[memberId].linkedInLink, '_blank')
+                            }, 500)}>{memberInfo[memberId].linkedInIcon}</button></i>
                         </section>
                     </section>
                 </article>

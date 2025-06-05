@@ -47,6 +47,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}
@@ -81,6 +84,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}
@@ -117,6 +123,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}
@@ -151,6 +160,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}
@@ -185,6 +197,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}
@@ -221,6 +236,9 @@ const BandMember = () => {
                             <i className={member.youtubeIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
                                 window.open(member.youtubeLink, '_blank')
                             }, 500)}>{member.youtubeIcon}</button></i>
+                            <i className={member.linkedInIcon === false ? 'hidden' : 'media-icon'}><button onClick={() => setTimeout(() => {
+                                window.open(member.linkedInLink, '_blank')
+                            }, 500)}>{member.linkedInIcon}</button></i>
                         </section>
                     </article>
                 ))}

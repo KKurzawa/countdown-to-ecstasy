@@ -12,6 +12,7 @@ import { SiApplemusic } from "react-icons/si";
 import { FaSpotify } from "react-icons/fa";
 import { FaSoundcloud } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 const memberInfo = [
     {
@@ -33,6 +34,8 @@ const memberInfo = [
         soundCloudLink: 'https://soundcloud.com/mk123123',
         youtubeIcon: <IoLogoYoutube />,
         youtubeLink: 'https://www.youtube.com/@MajestyWalk-qx5fd',
+        linkedInIcon: false,
+        linkedInLink: false,
         bio: "Michael King is a Detroit based multi instrumentalist Songwriter, Producer and Composer. He was a founding member of the band Press (with Liz Larin), He is the Music Director and Composer for Karen Newman and is a member of the Abbey Road Project.  Michael is also the creator , writer and producer for the new multi media / music project Majesty Walk."
     },
     {
@@ -54,6 +57,8 @@ const memberInfo = [
         soundCloudLink: false,
         youtubeIcon: <IoLogoYoutube />,
         youtubeLink: 'https://www.youtube.com/@kriskurzawa8133',
+        linkedInIcon: false,
+        linkedInLink: false,
         bio: "Kris Kurzawa’s versatility has led him to become one of the Detroit area’s most in-demand guitarists since the early 2000s; crossing multiple genres including jazz, fusion, rock, world music, and R+B.  He released his first album ‘Sly’ in 2016 earning him his fifth Detroit Music Award.  He earned his bachelor's degree in 2003 and his master's degree in 2012 with a concentration in jazz studies from Wayne State University where his now adjunct faculty in their jazz studies program."
     },
     {
@@ -75,12 +80,14 @@ const memberInfo = [
         soundCloudLink: false,
         youtubeIcon: false,
         youtubeLink: false,
+        linkedInIcon: false,
+        linkedInLink: false,
         bio: 'Laura Creamer is a Detroit-born singer/songwriter who has toured and recorded with Bob Seger, Eric Clapton, Bruce Hornsby, The Black Crowes, Thomas Dolby, Eagles members: Glenn Frey and Joe Walsh, and many others. Her writing and vocals have been used on many albums, commercials, and music for film and TV.'
     },
     {
         id: 3,
         name: 'Dale Grisa',
-        credits: 'Karen Newman/Jill Jack/Michael King',
+        credits: 'Alexander Zonjic/Bobby Murray/Revival',
         pic: Dale,
         websiteIcon: false,
         websiteLink: false,
@@ -88,15 +95,17 @@ const memberInfo = [
         appleMusicLink: false,
         spotifyIcon: false,
         spotifyLink: false,
-        facebookIcon: false,
-        facebookLink: false,
+        facebookIcon: <FaFacebookSquare />,
+        facebookLink: 'https://www.facebook.com/dale.grisa',
         instagramIcon: false,
         instagramLink: false,
         soundCloundIcon: false,
         soundCloudLink: false,
         youtubeIcon: false,
         youtubeLink: false,
-        bio: 'Consequat duis quis exercitation nulla id qui deserunt duis mollit voluptate incididunt commodo. Laborum eiusmod culpa nulla deserunt fugiat non irure. Sint in amet fugiat commodo est.'
+        linkedInIcon: <FaLinkedin />,
+        linkedInLink: 'https://www.linkedin.com/in/dale-grisa-545a4362/',
+        bio: 'Dale Grisa is a Pianist, Producer and Orchestrator based in Detroit who works with a variety of clients on live events, recording projects and musical theatre. Live performance credits include, Jill Jack, Alexander Zonjic, Dave McMurray, Peter White, Ken Navarro, The Bacon Brothers, Stewart Franke, Evanescence, IL Divo, numerous national tours of musical theatre including, Mamma Mia, Hairspray, Memphis, and several others.'
     },
     {
         id: 4,
@@ -117,6 +126,8 @@ const memberInfo = [
         soundCloudLink: false,
         youtubeIcon: false,
         youtubeLink: false,
+        linkedInIcon: false,
+        linkedInLink: false,
         bio: "Dave is a musician, singer, songwriter, and producer.  He’s been described as “a bass player’s bass player”.  Artists hire him again and again for his professionalism.  From his earliest days picking up a bass in school and playing along with every Top 40 song on the radio through his time at the Berklee College of Music and Oakland University jazz departments, Dave has honed his skills in all styles of music from Big Band and Funk to Country, Jazz and more."
     },
     {
@@ -138,6 +149,8 @@ const memberInfo = [
         soundCloudLink: false,
         youtubeIcon: false,
         youtubeLink: false,
+        linkedInIcon: false,
+        linkedInLink: false,
         bio: "Adam is a Detroit-area drummer/percussionist known for his versatility, performing every musical style from jazz and blues to rock and musical theater.  He has toured nationally, recorded for film and television and performed with such artists as Kim Wilson, Lazy Lester, The Tokens, Karen Newman, Stewart Franke and Theo Gridiron."
     }
 ]

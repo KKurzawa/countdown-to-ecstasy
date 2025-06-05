@@ -1,5 +1,4 @@
 .landing{
-    /* background-color: var(--color-one); */
     color:var(--color-two)
 }
 
@@ -58,7 +57,7 @@
 }
 
 .landing-content{
-    animation: fade-out 1.5s linear 4.5s 1 both;
+    animation: fade-out 1.5s linear 5.5s 1 both;
 }
 
 @keyframes logo-fade-in {

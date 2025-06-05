@@ -11,10 +11,10 @@ const Footer = () => {
             }, 1000)}>To The Top</button>
             <article className="footer-icons flex gap-5 text-3xl md:text-5xl">
                 <i><button className='media-icon' onClick={() => setTimeout(() => {
-                    window.open('http://facebook.com', '_blank')
+                    window.open('https://www.facebook.com/KrisKurzawaGuitar/', '_blank')
                 }, 500)}><FaFacebookSquare /></button></i>
                 <i><button className='media-icon' onClick={() => setTimeout(() => {
-                    window.open('http://instagram.com', '_blank')
+                    window.open('https://www.instagram.com/k_kurzawa/', '_blank')
                 }, 500)}><FaInstagramSquare /></button></i>
             </article>
             <a href="mailto:kurzawa1@yahoo.com" className='email text-base md:text-2xl'>Email Us</a>
