@@ -1,12 +1,40 @@
-# React + Vite
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Countdown to Ectsasy
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A professional website for Countdown To Ectasy built with React, styled with Tailwind, and deployed with Vercel.  Server in seperate repository, see link below.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![screenshot1](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot1.png)
+![screenshot2](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot2.png)
+![screenshot3](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot3.png)
+![screenshot4](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot4.png)
+![screenshot5](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot5.png)
+![screenshot6](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot6.png)
+![screenshot7](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot7.png)
+![screenshot8](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot8.png)
+![screenshot9](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot9.png)
+![screenshot10](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot10.png)
+![screenshot11](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot11.png)
 
-## Expanding the ESLint configuration
+[Github Repository](https://github.com/KKurzawa/countdown-to-ecstasy)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Deployed Site](https://www.countdowntoecstasydetroit.com/)
+
+[Server Github Repository](https://github.com/KKurzawa/countdown-to-ecstasy-server)
+
+## Credits
+
+n/a
+
+## Questions
+
+[Github Profile](https://github.com/KKurzawa)
+
+Email me at kurzawa1@yahoo.com for questions.
+
+## License
+
+MIT License
+
+Copyright (c) 2024 Kris Kurzawa
