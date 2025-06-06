@@ -5,17 +5,12 @@
 A professional website for Countdown To Ectasy built with React, styled with Tailwind, and deployed with Vercel.  Server in seperate repository, see link below.
 
 
-![screenshot1](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot1.png)
-![screenshot2](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot2.png)
-![screenshot3](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot3.png)
-![screenshot4](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot4.png)
-![screenshot5](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot5.png)
-![screenshot6](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot6.png)
-![screenshot7](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot7.png)
-![screenshot8](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot8.png)
-![screenshot9](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot9.png)
-![screenshot10](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot10.png)
-![screenshot11](https://github.com/KKurzawa/led-detroit/blob/main/public/Screenshot11.png)
+![screenshot1](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot1.png)
+![screenshot2](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot2.png)
+![screenshot3](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot3.png)
+![screenshot4](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot4.png)
+![screenshot5](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot5.png)
+![screenshot6](https://github.com/KKurzawa/countdown-to-ecstasy/blob/main/public/Screenshot6.png)
 
 [Github Repository](https://github.com/KKurzawa/countdown-to-ecstasy)
 
